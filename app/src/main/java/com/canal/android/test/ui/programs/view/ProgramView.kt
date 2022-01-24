@@ -20,6 +20,7 @@ class ProgramView @JvmOverloads constructor(
             LayoutParams.MATCH_PARENT,
             LayoutParams.WRAP_CONTENT
         )
+        radius = 40f
     }
 
     fun setData(
