@@ -1,6 +1,6 @@
-package com.canal.android.test.repository.mapper
+package com.canal.android.test.data.mapper
 
-import com.canal.android.test.repository.api.model.ProgramApi
+import com.canal.android.test.data.api.model.ProgramApi
 import com.canal.android.test.domain.model.Program
 
 class ProgramMapper(

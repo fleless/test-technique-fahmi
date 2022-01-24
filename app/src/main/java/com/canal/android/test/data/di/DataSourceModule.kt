@@ -1,11 +1,11 @@
-package com.canal.android.test.repository.di
+package com.canal.android.test.data.di
 
-import com.canal.android.test.repository.ApiDataSource
-import com.canal.android.test.repository.RepositoryImpl
-import com.canal.android.test.repository.api.ApiDataSourceImpl
-import com.canal.android.test.repository.mapper.OnClickMapper
-import com.canal.android.test.repository.mapper.ProgramMapper
-import com.canal.android.test.repository.api.retrofit.ApiRetrofitFactory
+import com.canal.android.test.data.ApiDataSource
+import com.canal.android.test.data.RepositoryImpl
+import com.canal.android.test.data.api.ApiDataSourceImpl
+import com.canal.android.test.data.mapper.OnClickMapper
+import com.canal.android.test.data.mapper.ProgramMapper
+import com.canal.android.test.data.api.retrofit.ApiRetrofitFactory
 import com.canal.android.test.domain.Repository
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module

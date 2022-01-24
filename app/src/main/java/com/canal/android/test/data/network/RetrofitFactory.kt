@@ -1,4 +1,4 @@
-package com.canal.android.test.repository.network
+package com.canal.android.test.data.network
 
 import com.canal.android.test.BuildConfig
 import com.squareup.moshi.Moshi
