@@ -6,9 +6,15 @@ Ce test se déroulera en 3 parties:
 3- Faire des retours sur le code
 
 
+Prenez le temps que vous souhaitez pour réaliser ce test technique et n'hésitez pas à nous contacter pour toute question.
+
 En résultat il faudra partager les sources de l'application via un projet Git
 
-Prenez le temps que vous souhaitez pour réaliser ce test technique et n'hésitez pas à nous contacter pour toute question.
+Lors de la review je porterai attention à:
+- l'utilisation de git
+- le respect de l'architecture
+- l'implémentation des fonctionnalités
+- Si vous avez envie d'aller plus loin faites vous plaisir dans des commits dédiés
 
 Let's go! :)
 
@@ -43,12 +49,7 @@ Lorsqu’on clique sur un programme ayant le champ `NavigateTo` de type `QuickTi
 Pour récupérer le flux video à lire il faudra appeler l’url fournie par le champ `urlMedias` inclus dans l'objet `QuickTime` qui retournera un champ `videoUrl` avec une url d’un fichier en m3u8 et le champs `encryption` égal à `clear`.
 
 **Un peu d’aide :**
--	Suivre le processus précisé sur le guide ExoPlayer http://google.github.io/ExoPlayer/guide.html
--	Utiliser la classe HlsMediaSource comme la vidéo est au format HLS
--	Si vous utilisez androidx vous pouvez rencontrer une erreur du type: "Error while merging dex Program type already present". Il suffira juste d'utiliser à la place "com.android.support".
-
-**Quelques liens utiles:**
-- https://github.com/google/ExoPlayer/tree/release-v2/demos/main/src/main/java/com/google/android/exoplayer2/demo
+- Lire une video avec ExoPlayer: http://google.github.io/ExoPlayer/guide.html
 
 ## 3 - Retours du test (Vous pouvez etre succint dans les réponses)
 
