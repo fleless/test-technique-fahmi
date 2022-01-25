@@ -1,4 +1,4 @@
-package com.canal.android.test.repository.api.model
+package com.canal.android.test.data.api.model
 
 data class ProgramApi(
     val type: String,

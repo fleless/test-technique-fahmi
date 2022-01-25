@@ -1,7 +1,7 @@
 package com.canal.android.test.ui
 
 import android.app.Application
-import com.canal.android.test.repository.di.koinDataSourceModules
+import com.canal.android.test.data.di.koinDataSourceModules
 import com.canal.android.test.domain.di.koinDomainModules
 import com.canal.android.test.ui.di.koinUiModules
 import org.koin.android.ext.koin.androidContext

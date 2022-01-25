@@ -1,6 +1,6 @@
-package com.canal.android.test.repository
+package com.canal.android.test.data
 
-import com.canal.android.test.repository.api.model.ProgramApi
+import com.canal.android.test.data.api.model.ProgramApi
 import io.reactivex.Single
 
 interface ApiDataSource {

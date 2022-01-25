@@ -1,6 +1,6 @@
-package com.canal.android.test.repository
+package com.canal.android.test.data
 
-import com.canal.android.test.repository.mapper.ProgramMapper
+import com.canal.android.test.data.mapper.ProgramMapper
 import com.canal.android.test.domain.Repository
 import com.canal.android.test.domain.model.Program
 import io.reactivex.Single

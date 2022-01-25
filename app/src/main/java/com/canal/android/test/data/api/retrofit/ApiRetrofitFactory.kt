@@ -1,8 +1,8 @@
-package com.canal.android.test.repository.api.retrofit
+package com.canal.android.test.data.api.retrofit
 
 import android.content.Context
-import com.canal.android.test.repository.network.RetrofitFactory.buildHttpClient
-import com.canal.android.test.repository.network.RetrofitFactory.buildMoshi
+import com.canal.android.test.data.network.RetrofitFactory.buildHttpClient
+import com.canal.android.test.data.network.RetrofitFactory.buildMoshi
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory

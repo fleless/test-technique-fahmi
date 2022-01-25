@@ -1,4 +1,4 @@
-package com.canal.android.test.repository.mapper
+package com.canal.android.test.data.mapper
 
 abstract class BaseDomainMapper<API, DOMAIN> {
 

@@ -1,6 +1,6 @@
-package com.canal.android.test.repository.api.retrofit
+package com.canal.android.test.data.api.retrofit
 
-import com.canal.android.test.repository.api.model.ProgramApi
+import com.canal.android.test.data.api.model.ProgramApi
 import io.reactivex.Single
 import retrofit2.http.GET
 import retrofit2.http.Url

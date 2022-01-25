@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.canal.android.test.R
 import com.canal.android.test.ui.programs.view.adapter.ProgramsAdapter
+import com.canal.android.test.ui.programs.view.adapter.ProgramsDecorator
 import kotlinx.android.synthetic.main.fragment_programs.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -31,6 +32,7 @@ class ProgramsFragment : Fragment() {
         programs_recycler.apply {
             layoutManager = LinearLayoutManager(view.context)
             adapter = recyclerAdapter
+            addItemDecoration(ProgramsDecorator(view.context))
         }
 
         viewModel.uiData.observe(viewLifecycleOwner, Observer { pageProgramsUi ->

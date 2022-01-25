@@ -1,6 +1,6 @@
-package com.canal.android.test.repository.mapper
+package com.canal.android.test.data.mapper
 
-import com.canal.android.test.repository.api.model.OnClickApi
+import com.canal.android.test.data.api.model.OnClickApi
 import com.canal.android.test.domain.model.NavigateTo
 
 class OnClickMapper : BaseDomainMapper<OnClickApi, NavigateTo>() {
