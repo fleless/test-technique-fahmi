@@ -1,9 +1,8 @@
 # Test Technique myCANAL Android
 
-Ce test se déroulera en 3 parties:
+Ce test se déroulera en 2 parties:
 1- Afficher la page détail d'un programme
-2- Lire un flux video en clair
-3- Faire des retours sur le code
+2- Faire des retours sur le code
 
 
 Prenez le temps que vous souhaitez pour réaliser ce test technique et n'hésitez pas à nous contacter pour toute question.
@@ -35,23 +34,19 @@ Let's go! :)
 ## 1 - Afficher une page détail
 Lorsqu’on clique sur un programme ayant le champ `NavigateTo` de type `DetailPage` il faudra afficher une nouvelle page qui correspond à la page détail. 
 
-Pour cela il faudra appeler l'url contenu dans le champ `urlPage` puis afficher :
-- le titre (`title`), 
-- le sous-titre (`subtitle`), 
-- l'image (`URLImage`),
-- le résumé (`summary`)
-- un bouton play
+La page détail devra respecter le design défini sur Figma : https://www.figma.com/file/XeCXQ7v9sYlvhWtxgHIkqQ/Android---Test-Technique?node-id=32%3A584
 
-## 2 - Lire un programme de la liste avec ExoPlayer
+Il faudra donc implémenter :
+   - les layouts mobile et tablette (à partir de 960 px)
+   - le theme dark / light
+   - sur chacun des écrans il faudra afficher:
+       - le titre (title)
+       - le sous-titre (subtitle)
+       - l'image (URLImage)
+       - la description (summary)
+       - le bouton lecture
 
-Lorsqu’on clique sur un programme ayant le champ `NavigateTo` de type `QuickTime` il faudra directement lancer la lecture du flux video avec Exoplayer SANS afficher la page détail. Les programmes de type quicktime correspondent à des videos en clair (non cryptées) au format HLS
-
-Pour récupérer le flux video à lire il faudra appeler l’url fournie par le champ `urlMedias` inclus dans l'objet `QuickTime` qui retournera un champ `videoUrl` avec une url d’un fichier en m3u8 et le champs `encryption` égal à `clear`.
-
-**Un peu d’aide :**
-- Lire une video avec ExoPlayer: http://google.github.io/ExoPlayer/guide.html
-
-## 3 - Retours du test (Vous pouvez etre succint dans les réponses)
+## 2 - Retours du test (Vous pouvez etre succint dans les réponses)
 
 - Y a t'il une erreur dans la classe `ProgramView` ? Si oui quel bug fonctionnel cela produit ?
 - Quel risque courent les mappers OnClickMapper et ProgramMapper ? Comment pourrait-on les améliorer ?
