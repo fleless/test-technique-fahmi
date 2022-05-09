@@ -52,6 +52,11 @@ Il faudra donc implémenter :
 - Quel risque courent les mappers OnClickMapper et ProgramMapper ? Comment pourrait-on les améliorer ?
 - Voyez vous d'autres améliorations que l'on aurait pu faire ?
 - Avez vous rencontré des difficultés dans le développement / compréhension du projet ?
+    Oui, vu que ça fait 2 ans que je travaille sur Flutter j'ai du prendre beaucoup de temps pour me documenter sur des nouveaux aspects et visions de l'android et surtout du kotlin.
+    L'utilisation du nav_graph, mappers (comme dans ce projet)  et contrats (never used them) comme dans ce projet m'ont poussé vers des recherches avancés 
+    Le projet est compréhensible j'ai trouvé mon rituel avec les jeux de swotch entre darkMode/LightMode
 - Y a t-il des améliorations de votre code qui aurait pu etre faites ?
+    oui
 - Combien de temps avez vous mis pour le faire ?
+  2 jours de documentation et 1 jour de dev
 

@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/fragment_programs">
 
     <fragment
         android:id="@+id/fragment_programs"
-        android:name="com.canal.android.test.ui.programs.ProgramsFragment" />
+        android:name="com.canal.android.test.ui.programs.ProgramsFragment" >
+        <action
+            android:id="@+id/action_fragment_programs_to_detailsFragment2"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.canal.android.test.ui.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="url"
+            app:argType="string" />
+    </fragment>
 
 </navigation>

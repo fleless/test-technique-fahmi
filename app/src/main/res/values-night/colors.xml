@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#000</color>
+    <color name="darkBackground">#000</color>
+    <color name="gradientDarkModeStart">#FF0E0E0E</color>
+    <color name="gradientDarkModeEnd">#000E0E0E</color>
+    <color name="brandAccent">#EC3654</color>
+    <color name="app_background">#E1E1E1</color>
+    <color name="detailBackground">#0E0E0E</color>
+    <color name="whiteBlack">#FFF</color>
+
+</resources>

@@ -1,13 +1,16 @@
 package com.canal.android.test.ui.programs.view.adapter
 
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.canal.android.test.domain.model.NavigateTo
 import com.canal.android.test.ui.programs.model.ProgramUi
 import com.canal.android.test.ui.programs.view.ProgramView
 
-class ProgramsAdapter : ListAdapter<ProgramUi, ProgramsAdapter.ViewHolder>(diffCallback) {
+class ProgramsAdapter(private val onClickListener: OnClickListener) :
+    ListAdapter<ProgramUi, ProgramsAdapter.ViewHolder>(diffCallback) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
@@ -25,9 +28,21 @@ class ProgramsAdapter : ListAdapter<ProgramUi, ProgramsAdapter.ViewHolder>(diffC
             urlImage = programUi.urlImage,
             urlLogoChannel = programUi.urlLogoChannel
         )
+        holder.itemView.setOnClickListener {
+            when (val navigate = programUi.navigateTo) {
+                is NavigateTo.DetailPage -> onClickListener.onClick(navigate.urlPage)
+                is NavigateTo.QuickTime -> {
+                    //TODO: add quickTime navigation
+                }
+            }
+        }
     }
 
     class ViewHolder(view: ProgramView) : RecyclerView.ViewHolder(view)
+
+    class OnClickListener(val clickListener: (url: String) -> Unit) {
+        fun onClick(url: String) = clickListener(url)
+    }
 
     companion object {
         private val diffCallback = object : DiffUtil.ItemCallback<ProgramUi>() {

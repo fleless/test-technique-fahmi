@@ -1,5 +1,6 @@
 package com.canal.android.test.ui.programs
 
+import android.util.Log
 import com.canal.android.test.domain.usecase.GetProgramsUseCase
 import com.canal.android.test.ui.common.BaseViewModel
 import com.canal.android.test.ui.programs.mapper.ProgramsUiMapper
@@ -24,7 +25,8 @@ class ProgramsViewModel(
                 onSuccess = { pageProgramsUi ->
                     postUiData(pageProgramsUi)
                 },
-                onError = {}
+                onError = {
+                }
             )
     }
 }
